@@ -1,6 +1,6 @@
 # Contributing to DocSearch
 
-Welcome to the contributing guide for DocSearch!
+Change. Welcome to the contributing guide for DocSearch!
 
 If this guide does not contain what you are looking for and thus prevents you from contributing, don't hesitate to leave a message on the [Discord](https://discord.gg/bRTacwYrfX) or to [open an issue](https://github.com/algolia/docsearch/issues).
 
@@ -17,13 +17,17 @@ Another element that will help us go faster at solving the issue is to provide a
 For any code contribution, you need to:
 
 - Fork and clone the project
-- Create a new branch for what you want to solve (fix/_issue-number_, feat/_name-of-the-feature_)
+
+- Create a new branch for what you want to solve (fix/*issue-number*, feat/*name-of-the-feature*)
+
 - Make your changes
+
 - Open a pull request
 
 Then:
 
 - A team member will review the pull request
+
 - Automatic checks will be run
 
 When every check is green and a team member approves, your contribution is merged! 🚀
@@ -39,9 +43,13 @@ type(scope): description
 In most cases, we use the following types:
 
 - `fix`: for any resolution of an issue (identified or not)
+
 - `feat`: for any new feature
+
 - `refactor`: for any code change that neither adds a feature nor fixes an issue
+
 - `docs`: for any documentation change or addition
+
 - `chore`: for anything that is not related to the library itself (doc, tooling)
 
 Even though the scope is optional, we try to fill it in as it helps us better understand the impact of a change.
@@ -51,8 +59,11 @@ Finally, if your work is based on an issue on GitHub, please add in the body of 
 Some examples of valid commit messages (used as first lines):
 
 > - fix(searchbox): add `type` input property
+>
 > - chore(deps): update dependency rollup-plugin-babel to v3.0.7
+>
 > - fix(modal): increase default height
+>
 > - docs(contributing): reword release section
 
 ## Requirements
@@ -60,6 +71,7 @@ Some examples of valid commit messages (used as first lines):
 To run this project, you will need:
 
 - Node.js ≥ 16 – [nvm](https://github.com/creationix/nvm#install-script) is recommended
+
 - [Yarn](https://yarnpkg.com)
 
 ## Release

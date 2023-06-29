@@ -1,6 +1,6 @@
 # @docsearch/react
 
-React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+Change. React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
 ## Installation
 
@@ -20,7 +20,7 @@ If you don’t want to use a package manager, you can use a standalone endpoint:
 
 DocSearch generates a fully accessible search box for you.
 
-```jsx App.js
+```jsx
 import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';

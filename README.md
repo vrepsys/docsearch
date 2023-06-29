@@ -1,32 +1,29 @@
 <div align="center">
+  [![DocSearch](.github/logo.svg)](https://docsearch.algolia.com)
 
-[![DocSearch](.github/logo.svg)](https://docsearch.algolia.com)
+  The easiest way to add search to your documentation – for free.
 
-The easiest way to add search to your documentation – for free.
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/30eacc09-d4b2-4a53-879b-04d40aaea454/deploy-status)](https://app.netlify.com/sites/docsearch/deploys) [![npm version](https://img.shields.io/npm/v/@docsearch/js.svg?style=flat-square)](https://www.npmjs.com/package/@docsearch/js/v/alpha) [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/30eacc09-d4b2-4a53-879b-04d40aaea454/deploy-status)](https://app.netlify.com/sites/docsearch/deploys) [![npm version](https://img.shields.io/npm/v/@docsearch/js.svg?style=flat-square)](https://www.npmjs.com/package/@docsearch/js/v/alpha) [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
-
-<p align="center">
-  <strong>
-  <a href="https://docsearch.algolia.com">Documentation</a> •
-  <a href="https://codesandbox.io/s/docsearchjs-v3-playground-z9oxj">JavaScript Playground</a> •
-  <a href="https://codesandbox.io/s/docsearch-react-v3-playground-619yg">React Playground</a>
-  </strong>
-</p>
-
+  <p align="center">
+    <strong>
+      <a href="https://docsearch.algolia.com">Documentation</a> •
+      <a href="https://codesandbox.io/s/docsearchjs-v3-playground-z9oxj">JavaScript Playground</a> •
+      <a href="https://codesandbox.io/s/docsearch-react-v3-playground-619yg">React Playground</a>
+    </strong>
+  </p>
 </div>
 
----
 
-DocSearch crawls your documentation, pushes the content to an Algolia index and provides a dropdown search experience on your website.
+***
+
+Change. DocSearch crawls your documentation, pushes the content to an Algolia index and provides a dropdown search experience on your website.
 
 ## Preview
 
 ![Screencast](.github/screencast.gif)
 
-| Light | Dark |
-| --- | --- |
-| ![Light preview](.github/preview-light.png) | ![Dark preview](.github/preview-dark.png) |
+| Light | Dark | | --- | --- | | ![Light preview](.github/preview-light.png) | ![Dark preview](.github/preview-dark.png) |
 
 ## Usage
 
@@ -60,7 +57,7 @@ Then, insert DocSearch into it by calling the [`docsearch`](https://docsearch.al
 
 Make sure to provide a [`container`](https://docsearch.algolia.com/docs/api#container) (for example, a `div`), not an `input`. DocSearch generates a fully accessible search box for you.
 
-```js app.js
+```js
 import docsearch from '@docsearch/js';
 
 import '@docsearch/css';
@@ -93,7 +90,7 @@ If you don’t want to use a package manager, you can use a standalone endpoint:
 
 DocSearch generates a fully accessible search box for you.
 
-```jsx App.js
+```jsx
 import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';
@@ -119,10 +116,13 @@ export default App;
 
 DocSearch is made of the following repositories:
 
-- **[algolia/docsearch](https://github.com/algolia/docsearch)**: DocSearch source code.
-- **[algolia/docsearch/packages/website](https://github.com/algolia/docsearch/tree/main/packages/website)**: DocSearch website and documentation.
-- **[algolia/docsearch-configs](https://github.com/algolia/docsearch-configs)**: DocSearch websites configurations that DocSearch powers.
-- **[algolia/docsearch-scraper](https://github.com/algolia/docsearch-scraper)**: DocSearch crawler that extracts data from your documentation.
+- [**algolia/docsearch**](https://github.com/algolia/docsearch): DocSearch source code.
+
+- [**algolia/docsearch/packages/website**](https://github.com/algolia/docsearch/tree/main/packages/website): DocSearch website and documentation.
+
+- [**algolia/docsearch-configs**](https://github.com/algolia/docsearch-configs): DocSearch websites configurations that DocSearch powers.
+
+- [**algolia/docsearch-scraper**](https://github.com/algolia/docsearch-scraper): DocSearch crawler that extracts data from your documentation.
 
 ## License
 
