@@ -1,8 +1,8 @@
 # @docsearch/js
 
-Change. JavaScript package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+JavaScript package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## Installation
+## Insta llation
 
 ```sh
 yarn add @docsearch/js@3

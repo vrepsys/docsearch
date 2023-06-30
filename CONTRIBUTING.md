@@ -1,12 +1,12 @@
 # Contributing to DocSearch
 
-Change. Welcome to the contributing guide for DocSearch!
+Welcome to the contributing guide for DocSearch!
 
 If this guide does not contain what you are looking for and thus prevents you from contributing, don't hesitate to leave a message on the [Discord](https://discord.gg/bRTacwYrfX) or to [open an issue](https://github.com/algolia/docsearch/issues).
 
 ## Reporting an issue
 
-Opening an issue is very effective way to contribute because many users might also be impacted. We'll make sure to fix it quickly if it's technically feasible and doesn't have important side effects for other users.
+Opening an issue is very effective way to contribute because many users might also be impacted. We'll make sure to fix it quickly if it's technically feasible and doesn't have important side effects  for other users.
 
 Before reporting an issue, first check that there is not an already open issue for the same topic using the [issues page](https://github.com/algolia/docsearch/issues). Don't hesitate to thumb up an issue that corresponds to the problem you have.
 

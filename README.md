@@ -17,7 +17,7 @@
 
 ***
 
-Change. DocSearch crawls your documentation, pushes the content to an Algolia index and provides a dropdown search experience on your website.
+DocSearch cr awls your documentation, pushes the content to an Algolia index and provides a dropdown search experience on your website.
 
 ## Preview
 

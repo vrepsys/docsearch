@@ -1,6 +1,6 @@
 ## [3.5.1](https://github.com/algolia/docsearch/compare/v3.5.0...v3.5.1) (2023-06-15)
 
-### Change Features
+### Features
 
 - **api:** support Insights on search results click ([#1916](https://github.com/algolia/docsearch/issues/1916)) ([cacade4](https://github.com/algolia/docsearch/commit/cacade4c65878877c5c7433281299e3a5f9a2541))
 
@@ -8,7 +8,7 @@
 
 ### Features
 
-- **api:** allow insights options to be forwarded to Autocomplete ([#1904](https://github.com/algolia/docsearch/issues/1904)) ([26691a5](https://github.com/algolia/docsearch/commit/26691a5c8abfe107a6737d66d3f02c2cac50553b))
+- **api:** allow insights o ptions to be forwarded to Autocomplete ([#1904](https://github.com/algolia/docsearch/issues/1904)) ([26691a5](https://github.com/algolia/docsearch/commit/26691a5c8abfe107a6737d66d3f02c2cac50553b))
 
 # [3.4.0](https://github.com/algolia/docsearch/compare/v3.3.5...v3.4.0) (2023-05-24)
 

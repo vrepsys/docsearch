@@ -1,6 +1,6 @@
 # @docsearch/react
 
-Change. React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+React pac kage for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
 ## Installation
 

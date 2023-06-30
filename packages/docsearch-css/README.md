@@ -1,8 +1,8 @@
 # @docsearch/css
 
-Change. Style package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+Style package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## Installation
+## Install ation
 
 ```bash
 yarn add @docsearch/css@3

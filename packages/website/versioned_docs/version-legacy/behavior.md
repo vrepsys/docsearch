@@ -4,12 +4,10 @@ sidebar_label: Behavior
 ---
 
 :::caution
-
-The following references to **[Autocomplete.js](https://github.com/algolia/autocomplete/tree/master)** are outdated. If you would like to try the latest version, please visit the **[Autocomplete documentation](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/)**
-
+The following references to [**Autocomplete.js**](https://github.com/algolia/autocomplete/tree/master) are outdated. If you would like to try the latest version, please visit the [**Autocomplete documentation**](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/)
 :::
 
-Our JavaScript library [DocSearch.js][7] is a wrapper of the [Algolia autocomplete.js][1] library. This library listens to every keystrokes typed in the search input, queries Algolia, and displays the results in a dropdown. Everything is already configured for you to work with DocSearch. Our UI library also exposes configuration options you can use to go even further. You will discover Algolia out of the box for documentation. Let's start the **learn as you type** experience.
+Our JavaScript library [DocSearch.js](https://github.com/algolia/docsearch.js) is a wrapper of the [Algolia autocomplete.js](https://github.com/algolia/autocomplete/tree/master) library. This library listens to every keystrokes typed in th e search input, q ueries Algolia, and displays the results in  a dropdown . Everything is already configured for you to work with DocSearch. Our UI library also exposes config  uration options you c an use to go even further. You will discover Algolia out of the box for documentation. Let's start the **learn as you type** experience.
 
 ## `appId`
 
@@ -54,7 +52,7 @@ docsearch({
 });
 ```
 
-You can [try it live on CodeSandbox][3].
+You can [try it live on CodeSandbox](https://codesandbox.io/s/docsearchjs-open-in-new-tab-tgs2h).
 
 ## `queryHook`
 
@@ -84,7 +82,7 @@ docsearch({
 
 ## `autocompleteOptions`
 
-You can pass any options to the underlying [Autocomplete.js](https://github.com/algolia/autocomplete/tree/master) library by using the `autocompleteOptions` parameter. You can find the list of all available values in [the official documentation][4].
+You can pass any options to the underlying [Autocomplete.js](https://github.com/algolia/autocomplete/tree/master) library by using the `autocompleteOptions` parameter. You can find the list of all available values in [the official documentation](https://github.com/algolia/autocomplete/tree/master#global-options).
 
 You can also listen to `autocomplete` events through the `.autocomplete` property of the `docsearch` instance.
 
@@ -103,9 +101,9 @@ search.autocomplete.on('autocomplete:opened', event => {
 
 ## `algoliaOptions`
 
-You can forward search parameters to the Algolia API by using the `algoliaOptions` key. You can find all Algolia API options in their [own documentation][5].
+You can forward search parameters to the Algolia API by using the `algoliaOptions` key. You can find all Algolia API options in their [own documentation](https://www.algolia.com/doc/api-reference/api-parameters/).
 
-For example, you might want to increase the number of results displayed in the dropdown. [`hitsPerPage` set the number of shown hits][6].
+For example, you might want to increase the number of results displayed in the dropdown. [`hitsPerPage` set the number of shown hits](https://www.algolia.com/doc/api-reference/api-parameters/hitsPerPage/).
 
 ```javascript
 docsearch({
@@ -116,9 +114,3 @@ docsearch({
 });
 ```
 
-[1]: https://github.com/algolia/autocomplete/tree/master
-[3]: https://codesandbox.io/s/docsearchjs-open-in-new-tab-tgs2h
-[4]: https://github.com/algolia/autocomplete/tree/master#global-options
-[5]: https://www.algolia.com/doc/api-reference/api-parameters/
-[6]: https://www.algolia.com/doc/api-reference/api-parameters/hitsPerPage/
-[7]: https://github.com/algolia/docsearch.js

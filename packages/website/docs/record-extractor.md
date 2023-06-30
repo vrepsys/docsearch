@@ -5,23 +5,22 @@ title: Record Extractor
 ## Introduction
 
 :::info
-
-This documentation will only contain information regarding the **helpers.docsearch** method, see **[Algolia Crawler Documentation][7]** for more information on the **[Algolia Crawler][8]**.
-
+This documentation will only contain information regarding the **helpers.docsearch** method, see [**Algolia Crawler Documentation**](https://www.algolia.com/doc/tools/crawler/getting-started/overview/) for more information on the [**Algolia Crawler**](https://www.algolia.com/products/search-and-discovery/crawler/).
 :::
 
-Pages are extracted by a [`recordExtractor`][9]. These extractors are assigned to [`actions`][12] via the [`recordExtractor`][9] parameter. This parameter links to a function that returns the data you want to index, organized in an array of JSON objects.
+Pages are extracted by a [`recordExtractor`](https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/#parameter-param-recordextractor). These extractors are assigned to [`actions`](https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/) via the `recordExtractor` parameter. This parameter links to a function that returns the data you want to ind   ex, organized in an arra   y of JSON objects.
 
-_The helpers are a collection of functions to help you extract content and generate Algolia records._
+*The helpers are a colle   ction of functions to help you extract content and generate Algolia records.*
 
 ### Useful links
 
-- [Extracting records with the Algolia Crawler][11]
-- [`recordExtractor` parameters][10]
+- [Extracting records with the Algolia Crawler](https://www.algolia.com/doc/tools/crawler/guides/extracting-data/#extracting-records)
+
+- [`recordExtractor` parameters](https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/#parameter-param-recordextractor-2)
 
 ## Usage
 
-The most common way to use the DocSearch helper, is to return its result to the [`recordExtractor`][9] function.
+The most common way to use the DocSearch helper, is to return its result to the [`recordExtractor`](https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/#parameter-param-recordextractor) function.
 
 ```js
 recordExtractor: ({ helpers }) => {
@@ -95,7 +94,7 @@ recordExtractor: ({ $, helpers }) => {
 
 ### Provide raw text (`defaultValue`)
 
-_Only the `lvl0` and [custom variables][13] selectors support this option_
+*Only the `lvl0` and [custom variables](/docs/record-extractor#indexing-content-for-faceting) selectors support this option*
 
 You might want to structure your search results differently than your website, or provide a `defaultValue` to a potentially non-existent selector:
 
@@ -129,7 +128,7 @@ recordExtractor: ({ $, helpers }) => {
 
 ### Indexing content for faceting
 
-_These selectors also support [`defaultValue`](#provide-raw-text-defaultvalue) and [fallback selectors](#provide-fallback-selectors)_
+*These selectors also support [`defaultValue`](#provide-raw-text-defaultvalue) and [fallback selectors](#provide-fallback-selectors)*
 
 You might want to index content that will be used as filters in your frontend (e.g. `version` or `lang`), you can defined any custom variable to the `recordProps` object to add them to your Algolia records:
 
@@ -172,7 +171,7 @@ language: ["en", "en-US"],
 version: ["latest", "stable"]
 ```
 
-You can now use them to [filter your search in the frontend][16]
+You can now use them to [filter your search in the frontend](/docs/docsearch-v3/#filtering-your-search)
 
 ### Boost search results with `pageRank`
 
@@ -320,20 +319,6 @@ This option remove content from the Algolia records that are only used for [DocS
 This option tells the crawler if the `headings` (`lvlX`) should be indexed.
 
 - When `false`, only records for the `content` level will be created.
+
 - When `from, to` is provided, only records for the `lvlX` to `lvlY` will be created.
 
-[1]: /docs/DocSearch-v3
-[2]: https://github.com/algolia/docsearch/
-[3]: https://github.com/algolia/docsearch/tree/master
-[4]: /docs/legacy/dropdown
-[5]: /docs/migrating-from-legacy
-[6]: /docs/legacy/run-your-own
-[7]: https://www.algolia.com/doc/tools/crawler/getting-started/overview/
-[8]: https://www.algolia.com/products/search-and-discovery/crawler/
-[9]: https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/#parameter-param-recordextractor
-[10]: https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/#parameter-param-recordextractor-2
-[11]: https://www.algolia.com/doc/tools/crawler/guides/extracting-data/#extracting-records
-[12]: https://www.algolia.com/doc/tools/crawler/apis/configuration/actions/
-[13]: /docs/record-extractor#indexing-content-for-faceting
-[15]: https://www.algolia.com/doc/guides/managing-results/refine-results/faceting/
-[16]: /docs/docsearch-v3/#filtering-your-search

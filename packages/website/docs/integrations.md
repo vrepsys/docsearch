@@ -6,36 +6,24 @@ We worked with **documentation website generators** to have DocSearch directly e
 
 ## Our great integrations
 
-So, if you're using one of the following tools, checkout their documentation to see how to enable DocSearch on your website:
+So, if you're using one of the f ollowing tools, checkout their documentation to see how to enable DocSearch on your website:
 
-- [Docusaurus v1][1] - [How to enable search][2]
-- [Docusaurus v2][3] - [Using Algolia DocSearch][4]
-- [VuePress][5] - [Algolia Search][6]
-- [pkgdown][7] - [DocSearch indexing][8]
-- [LaRecipe][9] - [Algolia Search][10]
-- [Orchid][11] - [Algolia Search][12]
-- [Smooth DOC][13] - [DocSearch][14]
-- [Docsy][15] - [Configure Algolia DocSearch][16]
-- [dumi][18] - [algolia][19]
+- [Docusaurus v1](https://v1.docusaurus.io/) - [How to  enable search](https://v1.docusaurus.io/docs/en/search)
 
-If you're maintaining a similar tool and want us to add you to the list, [get in touch with us][17]. We'd be happy to help.
+- [Docusaurus v2](https://docusaurus.io/) - [Using Algolia DocSearch](https://docusaurus.io/docs/search#using-algolia-docsearch)
 
-[1]: https://v1.docusaurus.io/
-[2]: https://v1.docusaurus.io/docs/en/search
-[3]: https://docusaurus.io/
-[4]: https://docusaurus.io/docs/search#using-algolia-docsearch
-[5]: https://vuepress.vuejs.org/
-[6]: https://vuepress.vuejs.org/theme/default-theme-config.html#algolia-search
-[7]: https://pkgdown.r-lib.org/
-[8]: https://pkgdown.r-lib.org/articles/search.html
-[9]: https://larecipe.binarytorch.com.my/docs/2.2/overview
-[10]: https://larecipe.binarytorch.com.my/docs/2.2/configurations#search
-[11]: https://orchid.run
-[12]: https://orchid.run/plugins/orchidsearch#algolia-docsearch
-[13]: https://smooth-doc.com/
-[14]: https://smooth-doc.com/docs/docsearch/
-[15]: https://www.docsy.dev/
-[16]: https://www.docsy.dev/docs/adding-content/navigation/#configure-algolia-docsearch
-[17]: mailto:docsearch@algolia.com
-[18]: https://d.umijs.org/
-[19]: https://d.umijs.org/config#algolia
+- [VuePress](https://vuepress.vuejs.org/) - [Algolia Search](https://vuepress.vuejs.org/theme/default-theme-config.html#algolia-search)
+
+- [pkgdown](https://pkgdown.r-lib.org/) - [DocSearch indexing](https://pkgdown.r-lib.org/articles/search.html)
+
+- [LaRecipe](https://larecipe.binarytorch.com.my/docs/2.2/overview) - [Algolia Search](https://larecipe.binarytorch.com.my/docs/2.2/configurations#search)
+
+- [Orchid](https://orchid.run) - [Algolia Search](https://orchid.run/plugins/orchidsearch#algolia-docsearch)
+
+- [Smooth DOC](https://smooth-doc.com/) - [DocSearch](https://smooth-doc.com/docs/docsearch/)
+
+- [Docsy](https://www.docsy.dev/) - [Configure Algolia DocSearch](https://www.docsy.dev/docs/adding-content/navigation/#configure-algolia-docsearch)
+
+- [dumi](https://d.umijs.org/) - [algolia](https://d.umijs.org/config#algolia)
+
+If you're maintaining a similar tool and want us to add you to the list, [get in touch with us](mailto\:docsearch@algolia.com). We'd be happy to help.

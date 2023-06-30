@@ -2,7 +2,7 @@
 title: DocSearch program
 ---
 
-If you're not finding the answer to your question on this website, this page will help you. If you're still unsure, don't hesitate to send [your question to us][1] directly.
+If you're not finding the answer to your question on this website, this page will help you. If you're still unsure, don't hesitate to send [your question to us](mailto\:docsearch@algolia.com) directly.
 
 For questions related to the DocSearch x Algolia Crawler, please see our [Crawler FAQ](/docs/crawler).
 
@@ -10,15 +10,15 @@ For questions related to the DocSearch x Algolia Crawler, please see our [Crawle
 
 You just need to [implement DocSearch in your frontend](/docs/DocSearch-v3) with the credentials received by email when your application has been deployed.
 
-DocSearch leverages the [Algolia Crawler](https://www.algolia.com/products/search-and-discovery/crawler/), which offers a web [interface](https://crawler.algolia.com/) to create, monitor, edit, start your Crawlers. If you have any questions regarding it, please see our [Crawler FAQ](/docs/crawler).
+DocSearch lev erages the [Algolia Crawler](https://www.algolia.com/products/search-and-discovery/crawler/), which offers a web [interface](https://crawler.algolia.com/) to create, monitor, edit, start your Crawlers. If you have any questions regarding it, please see our [Crawler FAQ](/docs/crawler).
 
 ## How much does it cost?
 
 It's free!
 
-We know that paying for search infrastructure is a cost not all open source projects can afford. That's why we decided to keep DocSearch free for everyone. All we ask in exchange is that you keep the "Search by [Algolia][2]" logo displayed next to the search results.
+We know that paying for search infrastructure is a cost not all open source projects can afford. That's why we decided to keep DocSearch free for everyone. All we ask in exchange is that you keep the "Search by [Algolia](https://www.algolia.com/)" logo displayed next to the search results.
 
-If this is not possible for you, you're free to [open your own Algolia account](https://www.algolia.com/pricing) and run [DocSearch on your own][3] without this limitation. In that case, though, depending on the size of your documentation, you might need a paid account (free accounts can hold as much as 10k records).
+If this is not possible for you, you're free to [open your own Algolia account](https://www.algolia.com/pricing) and run [DocSearch on your own](/docs/legacy/run-your-own) without this limitation. In that case, though, depending on the size of your documentation, you might need a paid account (free accounts can hold as much as 10k records).
 
 ## What data are you collecting?
 
@@ -40,22 +40,18 @@ Depending on what you are looking for you have a few options!
 
 ### Upgrade #2: I want to remove the Algolia logo.
 
-This would disqualify you from the free DocSearch program. We do offer an open-source
-[legacy version](https://docsearch.algolia.com/docs/legacy/run-your-own) of the DocSearch Crawler that you can use and
-host yourself or you can use our [API clients](https://www.algolia.com/doc/api-client/getting-started/install/javascript/?client=javascript) but you will need to use a new Algolia application and pay for its usage.
+This would disqualify you from the free DocSearch program. We do offer an open-source [legacy version](https://docsearch.algolia.com/docs/legacy/run-your-own) of the DocSearch Crawler that you can use and host yourself or you can use our [API clients](https://www.algolia.com/doc/api-client/getting-started/install/javascript/?client=javascript) but you will need to use a new Algolia application and pay for its usage.
 
 ### Upgrade #3: Algolia is awesome, I want to use it for my whole site!
 
-That's awesome! Please reach out to our [sales team](https://www.algolia.com/contactus/)
-who can help you figure out the right plan for you. Once you have your new application
-created you can simply copy and paste [your Crawler config](https://docsearch.algolia.com/docs/templates) into your new application's
-Crawler.
+That's awesome! Please reach out to our [sales team](https://www.algolia.com/contactus/) who can help you figure out the right plan for you. Once you have your new application created you can simply copy and paste [your Crawler config](https://docsearch.algolia.com/docs/templates) into your new application's Crawler.
 
 ## Can I use DocSearch on non-doc pages?
 
 The free DocSearch we provide will **only** crawl open-source projects documentation pages or technical blogs. To use it on other parts of your website, you'll need to create your own Algolia account and either:
 
-- Run the [DocSearch crawler][3] on your own
+- Run the [DocSearch crawler](/docs/legacy/run-your-own) on your own
+
 - Use one of our other [framework integrations or API clients](https://www.algolia.com/doc/api-client/getting-started/install/javascript/?client=javascript)
 
 ## Can you index code samples?
@@ -68,7 +64,7 @@ Code samples are a great way for humans to understand how people use a specific 
 
 We'd love to help!
 
-If one of your favorite tool documentation websites is missing DocSearch, we encourage you to file an issue in their repository explaining how DocSearch could help. Feel free to [send us an email][1] as well, and we'll provide all the help we can.
+If one of your favorite tool documentation websites is missing DocSearch, we encourage you to file an issue in their repository explaining how DocSearch could help. Feel free to [send us an email](mailto\:docsearch@algolia.com) as well, and we'll provide all the help we can.
 
 ## How did we build this website?
 
@@ -97,8 +93,11 @@ We recommend having a single Algolia application per project. Please [apply](/ap
 The information of the initially applied project is used everywhere when we deploy your app:
 
 - The scope of your API keys
+
 - The name of your Algolia application/Crawler
+
 - The indices we generate
+
 - The allowed domains of your Crawler
 
 This allow us to easily scope issues when reaching out for support.
@@ -106,27 +105,25 @@ This allow us to easily scope issues when reaching out for support.
 ## Support
 
 :::caution
-
 Please make sure to **first read the documentation before reaching out**.
 
 Here are some links to help you:
 
 - [The Algolia Crawler documentation](https://www.algolia.com/doc/tools/crawler/getting-started/overview/)
+
 - [The Algolia Crawler FAQ](/docs/crawler)
+
 - [The DocSearch FAQ](/docs/DocSearch-program)
+
 - [The Algolia documentation](https://www.algolia.com/doc/)
 
 You can also take a look at [the Algolia academy](https://academy.algolia.com/trainings) to understand more about Algolia.
-
 :::
 
 Please be informed that while Algolia does not provide support for DocSearch itself, we can support requests for the following products:
 
 - The Algolia Crawler, reach out [via the support page](https://algolia.com/support).
+
 - The Algolia Dashboard, reach out [via the support page](https://algolia.com/support).
 
 For any issue related to [the DocSearch UI library](https://github.com/algolia/docsearch), please open a [GitHub issues](https://github.com/algolia/docsearch/issues).
-
-[1]: mailto:docsearch@algolia.com
-[2]: https://www.algolia.com/
-[3]: /docs/legacy/run-your-own
