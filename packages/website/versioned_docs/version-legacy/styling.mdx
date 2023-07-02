@@ -8,12 +8,10 @@ DocSearch default color scheme comes in a grey theme with blue highlight.
 
 ## Colorscheme
 
-<img
-  src={useBaseUrl('img/assets/default-colorscheme.png')}
-  alt="Default colorscheme"
-/>
+<img src={useBaseUrl('img/assets/default-colorscheme.png')} alt="Default colorscheme" />
 
-This theme works well with most websites, but we encourage you to style it to your own theme. You can achieved it by overriding the CSS classes used by the default theme.
+
+This theme works well with most websites, but we encourage you to style it to your own theme. You can achieved it by over riding the CSS classes used by the default theme.
 
 The following annotated example will help you style each part:
 
@@ -58,7 +56,7 @@ We're happy to provide DocSearch free of charge for any documentation website, a
 
 The logo is automatically added in the dropdown with the default styling. It's our way to let more people know about what we do, and how they could benefit from a fast and relevant search on their website.
 
-If you're using your own [paid Algolia account][1] and [run the crawler yourself][2], you don't have to keep the logo.
+If you're using your own [paid Algolia account](https://www.algolia.com/pricing) and [run the crawler yourself](/docs/legacy/scraper-overview), you don't have to keep the logo.
 
 ## Debugging
 
@@ -79,10 +77,6 @@ On small screens, DocSearch reverts to a single column layout, while is uses the
 
 ## Advanced styling
 
-Whether you would like to do more heavy styling, feel free to have a look at the [SCSS source code][3]. `_variables.scss` contains all the default theming, sizing and breakpoints.
+Whether you would like to do more heavy styling, feel free to have a look at the [SCSS source code](https://github.com/algolia/docsearch/tree/master/src/styles). `_variables.scss` contains all the default theming, sizing and breakpoints.
 
 You can generate your own CSS file by cloning the repository and running `yarn run build:css`. It generates the resulting file in `./dist/cdn`, and you should use them instead of the default one.
-
-[1]: https://www.algolia.com/pricing
-[2]: /docs/legacy/scraper-overview
-[3]: https://github.com/algolia/docsearch/tree/master/src/styles

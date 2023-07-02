@@ -2,9 +2,9 @@
 title: Required configuration
 ---
 
-This section, [empowered by the details about how we build a DocSearch index][1], gives you the best practices to optimize our crawl. Adopting this following specification is required to let our crawler build the best experience from your website. You will need to update your website and follow these rules.
+This section, [empowered by the details about how we build a DocSearch index](/docs/legacy/how-do-we-build-an-index), gives you the best practices to optimize our crawl. Adopting this following specification is required to let our crawler build the best experience from your website. You will need to update your website and follow these rules.
 
-Note: If your website is generated thanks to one of our supported tools, you do not need to change your website as it is already compliant with our requirements.
+Note: If your website is generated than ks to one of our supported tools, you do not need to change your website as it is already compliant with our requirements.
 
 ## The generic configuration example
 
@@ -43,11 +43,12 @@ Note: If your website is generated thanks to one of our supported tools, you do 
 
 A website implementing these best practices will look simple and crystal clear. It can have this following aspect:
 
-<img src="https://docsearch.algolia.com/img/assets/recommended-layout.png" alt="Recommended layout for your page"/>
+<img src="https://docsearch.algolia.com/img/assets/recommended-layout.png" alt="Recommended layout for your page" />
+
 
 The main blue element will be your `.DocSearch-content` container. More details in the following guidelines.
 
-### Use the right classes as [selectors][2]
+### Use the right classes as [selectors](/docs/legacy/config-file#selectors)
 
 You can add some specific static classes to help us find your content role. These classes can not involve any style changes. These dedicated classes will help us to create a great learn-as-you-type experience from your documentation.
 
@@ -61,7 +62,7 @@ You can add some specific static classes to help us find your content role. Thes
 
 - Every textual element (selector `text`) must be wrapped in a `<p>` or `<li>` tag. This content must be atomic and split into small entities. Be careful to never nest one matching element into another one as it will create duplicates.
 
-- Stay consistent and do not forget that we need to have some consistency along the HTML flow [as presented here][1].
+- Stay consistent and do not forget that we need to have some consistency along the HTML flow [as presented here](/docs/legacy/how-do-we-build-an-index).
 
 ## Introduce global information as meta tags
 
@@ -74,7 +75,7 @@ Our crawler automatically extracts information from our DocSearch specific meta 
 
 The crawl adds the `content` value of these `meta` tags to all records extracted from the page. The meta tags `name` must follow the `docsearch:$NAME` pattern. `$NAME` is the name of the attribute set to all records.
 
-You can then [transform these attributes as `facetFilters`][3] to filter over them from the UI. You will need to set the setting `attributesForFaceting` of the Algolia index. You need to submit a PR on your associated configuration via [the DocSearch `custom_settings` setting][4].
+You can then [transform these attributes as `facetFilters`](https://www.algolia.com/doc/guides/managing-results/refine-results/faceting/) to filter over them from the UI. You will need to set the setting `attributesForFaceting` of the Algolia index. You need to submit a PR on your associated configuration via [the DocSearch `custom_settings` setting](/docs/legacy/config-file#custom_settings-optional).
 
 ```json
 "custom_settings": {
@@ -94,7 +95,7 @@ docsearch({
 });
 ```
 
-The `docsearch:version` meta tag can be a set [of comma-separated tokens][5], each of which is a version relevant to the page. These tokens must be compliant with [the SemVer specification][6] or only contain alphanumeric characters (e.g. `latest`, `next`, etc.). As facet filters, these version tokens are case-insensitive.
+The `docsearch:version` meta tag can be a set [of comma-separated tokens](https://html.spec.whatwg.org/dev/common-microsyntaxes.html#comma-separated-tokens), each of which is a version relevant to the page. These tokens must be compliant with [the SemVer specification](https://semver.org/) or only contain alphanumeric characters (e.g. `latest`, `next`, etc.). As facet filters, these version tokens are case-insensitive.
 
 For example, all records extracted from a page with the following meta tag:
 
@@ -110,20 +111,10 @@ version:["2.0.0-alpha.62" , "latest"]
 
 ## Nice to have
 
-- Your website should have [an updated sitemap][7]. This is key to let our crawler know what should be updated. Do not worry, we will still crawl your website and discover embedded hyperlinks to find your great content.
+- Your website should have [an updated sitemap](https://www.sitemaps.org/). This is key to let our crawler know what should be updated. Do not worry, we will still crawl your website and discover embedded hyperlinks to find your great content.
 
 - Every page needs to have their full context available. Using global elements might help (see above).
 
-- Make sure your documentation content is also available without JavaScript rendering on the client-side. If you absolutely need JavaScript turned on, you need to [set `js_render: true` in your configuration][8].
+- Make sure your documentation content is also available without JavaScript rendering on the client-side. If you absolutely need JavaScript turned on, you need to [set `js_render: true` in your configuration](/docs/legacy/config-file#js_render-optional).
 
-Any questions? [Send us an email][9].
-
-[1]: /docs/legacy/how-do-we-build-an-index
-[2]: /docs/legacy/config-file#selectors
-[3]: https://www.algolia.com/doc/guides/managing-results/refine-results/faceting/
-[4]: /docs/legacy/config-file#custom_settings-optional
-[5]: https://html.spec.whatwg.org/dev/common-microsyntaxes.html#comma-separated-tokens
-[6]: https://semver.org/
-[7]: https://www.sitemaps.org/
-[8]: /docs/legacy/config-file#js_render-optional
-[9]: mailto:DocSearch@algolia.com
+Any questions? [Send us an email](mailto\:DocSearch@algolia.com).
