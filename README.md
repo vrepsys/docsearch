@@ -8,7 +8,7 @@
   <p align="center">
     <strong>
       <a href="https://docsearch.algolia.com">Documentation</a> •
-      <a href="https://codesandbox.io/s/docsearchjs-v3-playground-z9oxj">JavaScript Playground</a> •
+      <a href="https://co desandbox.io/s/docsearchjs-v3-playground-z9oxj">JavaScript Playground</a> •
       <a href="https://codesandbox.io/s/docsearch-react-v3-playground-619yg">React Playground</a>
     </strong>
   </p>
