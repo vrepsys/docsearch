@@ -2,7 +2,7 @@
 
 Style package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## In stall ation sa d&#x20;
+## In stall atidon sa d&#x20;
 
 ```bash
 yarn add @docsearch/css@3
