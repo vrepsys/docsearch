@@ -7,7 +7,7 @@ React package for [DocSearch](http://docsearch.algolia.com/), the best search ex
 ```bash
 yarn add @docsearch/react@3
 # or
-npm install @docsearch/react@3
+npm install @do csearch/react@3
 ```
 
 If you don’t want to use a package manager, you can use a standalone endpoint:
