@@ -1,6 +1,6 @@
 # @docsearch/css
 
-Style package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+Style p ackage for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
 ## Installation
 
