@@ -7,37 +7,35 @@ import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::info
-
-The following content is for **[DocSearch v3][2]**. If you are using **[DocSearch v2][3]**, see the **[legacy][4]** documentation.
-
+The following content is for [**DocSearch v3**](https://github.com/algolia/docsearch/). If you are using [**DocSearch v2**](https://github.com/algolia/docsearch/tree/master), see the [**legacy**](/docs/legacy/dropdown) documentation.
 :::
 
 <Tabs
   groupId="language"
   defaultValue="js"
   values={[
-    { label: 'JavaScript', value: 'js', },
-    { label: 'React', value: 'react', }
+   { label: 'JavaScript', value: 'js', },
+   { label: 'React ', value: 'react', }
   ]
-}>
-<TabItem value="js">
+  }
+>
+  <TabItem value="js">
+    ## `container`
 
-## `container`
+    > `type: string | HTMLElement` | **required**
 
-> `type: string | HTMLElement` | **required**
+    The container for the DocSearch search box. You can either pass a [CSS selector][5] or an [Element][6]. If there are several containers matching the selector, DocSearch picks up the first one.
 
-The container for the DocSearch search box. You can either pass a [CSS selector][5] or an [Element][6]. If there are several containers matching the selector, DocSearch picks up the first one.
+    ## `environment`
 
-## `environment`
+    > `type: typeof window` | `default: window` | **optional**
 
-> `type: typeof window` | `default: window` | **optional**
+    The environment in which your application is running.
 
-The environment in which your application is running.
-
-This is useful if you’re using DocSearch in a different context than window.
-
-</TabItem>
+    This is useful if you’re using DocSearch in a different context than window.
+  </TabItem>
 </Tabs>
+
 
 ## `appId`
 
@@ -59,7 +57,7 @@ Your Algolia index name.
 
 ## `placeholder`
 
-> `type: string` | `default: "Search docs" | **optional**
+> `type: string` | \`default: "Search docs" | **optional**
 
 The placeholder of the input of the DocSearch pop-up modal.
 
@@ -67,7 +65,7 @@ The placeholder of the input of the DocSearch pop-up modal.
 
 > `type: SearchParameters` | **optional**
 
-The [Algolia Search Parameters][7].
+The [Algolia Search Parameters](https://www.algolia.com/doc/api-reference/search-api-parameters/).
 
 ## `transformItems`
 
@@ -79,42 +77,40 @@ Receives the items from the search response, and is called before displaying the
   groupId="language"
   defaultValue="js"
   values={[
-    { label: 'JavaScript', value: 'js', },
-    { label: 'React', value: 'react', }
+   { label: 'JavaScript', value: 'js', },
+   { label: 'React', value: 'react', }
   ]
-}>
-<TabItem value="js">
+  }
+>
+  <TabItem value="js">
+    ```js
+    docsearch({
+      // ...
+      transformItems(items) {
+        return items.map((item) => ({
+          ...item,
+          content: item.content.toUpperCase(),
+        }));
+      },
+    });
+    ```
+  </TabItem>
 
-```js
-docsearch({
-  // ...
-  transformItems(items) {
-    return items.map((item) => ({
-      ...item,
-      content: item.content.toUpperCase(),
-    }));
-  },
-});
-```
-
-</TabItem>
-
-<TabItem value="react">
-
-```jsx
-<DocSearch
-  // ...
-  transformItems={(items) => {
-    return items.map((item) => ({
-      ...item,
-      content: item.content.toUpperCase(),
-    }));
-  }}
-/>
-```
-
-</TabItem>
+  <TabItem value="react">
+    ```jsx
+    <DocSearch
+      // ...
+      transformItems={(items) => {
+        return items.map((item) => ({
+          ...item,
+          content: item.content.toUpperCase(),
+        }));
+      }}
+    />
+    ```
+  </TabItem>
 </Tabs>
+
 
 ## `hitComponent`
 
@@ -122,13 +118,13 @@ docsearch({
 
 The component to display each item.
 
-See the [default implementation][8].
+See the [default implementation](https://github.com/algolia/docsearch/blob/main/packages/docsearch-react/src/Hit.tsx).
 
 ## `transformSearchClient`
 
 > `type: function` | `default: searchClient => searchClient` | **optional**
 
-Useful for transforming the [Algolia Search Client][10], for example to [debounce search queries][9]
+Useful for transforming the [Algolia Search Client](https://www.algolia.com/doc/api-client/getting-started/what-is-the-api-client/javascript/?client=javascript), for example to [debounce search queries](https://codesandbox.io/s/docsearch-v3-debounced-search-gnx87)
 
 ## `disableUserPersonalization`
 
@@ -146,9 +142,9 @@ The search input initial query.
 
 > `type: Navigator` | **optional**
 
-An implementation of [Algolia Autocomplete][1]’s Navigator API to redirect the user when opening a link.
+An implementation of [Algolia Autocomplete](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/)’s Navigator API to redirect the user when opening a link.
 
-Learn more on the [Navigator API][11] documentation.
+Learn more on the [Navigator API](https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation/) documentation.
 
 ## `translations`
 
@@ -156,56 +152,57 @@ Learn more on the [Navigator API][11] documentation.
 
 Allow translations of any raw text and aria-labels present in the DocSearch button or modal components.
 
-<details><summary>docSearchTranslations</summary>
-<div>
+<details>
+  <summary>docSearchTranslations</summary>
 
-```ts
-const translations: DocSearchTranslations = {
-  button: {
-    buttonText: 'Search',
-    buttonAriaLabel: 'Search',
-  },
-  modal: {
-    searchBox: {
-      resetButtonTitle: 'Clear the query',
-      resetButtonAriaLabel: 'Clear the query',
-      cancelButtonText: 'Cancel',
-      cancelButtonAriaLabel: 'Cancel',
-    },
-    startScreen: {
-      recentSearchesTitle: 'Recent',
-      noRecentSearchesText: 'No recent searches',
-      saveRecentSearchButtonTitle: 'Save this search',
-      removeRecentSearchButtonTitle: 'Remove this search from history',
-      favoriteSearchesTitle: 'Favorite',
-      removeFavoriteSearchButtonTitle: 'Remove this search from favorites',
-    },
-    errorScreen: {
-      titleText: 'Unable to fetch results',
-      helpText: 'You might want to check your network connection.',
-    },
-    footer: {
-      selectText: 'to select',
-      selectKeyAriaLabel: 'Enter key',
-      navigateText: 'to navigate',
-      navigateUpKeyAriaLabel: 'Arrow up',
-      navigateDownKeyAriaLabel: 'Arrow down',
-      closeText: 'to close',
-      closeKeyAriaLabel: 'Escape key',
-      searchByText: 'Search by',
-    },
-    noResultsScreen: {
-      noResultsText: 'No results for',
-      suggestedQueryText: 'Try searching for',
-      reportMissingResultsText: 'Believe this query should return results?',
-      reportMissingResultsLinkText: 'Let us know.',
-    },
-  },
-};
-```
-
-</div>
+  <div>
+    ```ts
+    const translations: DocSearchTranslations = {
+      button: {
+        buttonText: 'Search',
+        buttonAriaLabel: 'Search',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Clear the query',
+          resetButtonAriaLabel: 'Clear the query',
+          cancelButtonText: 'Cancel',
+          cancelButtonAriaLabel: 'Cancel',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recent',
+          noRecentSearchesText: 'No recent searches',
+          saveRecentSearchButtonTitle: 'Save this search',
+          removeRecentSearchButtonTitle: 'Remove this search from history',
+          favoriteSearchesTitle: 'Favorite',
+          removeFavoriteSearchButtonTitle: 'Remove this search from favorites',
+        },
+        errorScreen: {
+          titleText: 'Unable to fetch results',
+          helpText: 'You might want to check your network connection.',
+        },
+        footer: {
+          selectText: 'to select',
+          selectKeyAriaLabel: 'Enter key',
+          navigateText: 'to navigate',
+          navigateUpKeyAriaLabel: 'Arrow up',
+          navigateDownKeyAriaLabel: 'Arrow down',
+          closeText: 'to close',
+          closeKeyAriaLabel: 'Escape key',
+          searchByText: 'Search by',
+        },
+        noResultsScreen: {
+          noResultsText: 'No results for',
+          suggestedQueryText: 'Try searching for',
+          reportMissingResultsText: 'Believe this query should return results?',
+          reportMissingResultsLinkText: 'Let us know.',
+        },
+      },
+    };
+    ```
+  </div>
 </details>
+
 
 ## `getMissingResultsUrl`
 
@@ -217,45 +214,41 @@ Function to return the URL of your documentation repository.
   groupId="language"
   defaultValue="js"
   values={[
-    { label: 'JavaScript', value: 'js', },
-    { label: 'React', value: 'react', }
+   { label: 'JavaScript', value: 'js', },
+   { label: 'React', value: 'react', }
   ]
-}>
-<TabItem value="js">
+  }
+>
+  <TabItem value="js">
+    ```js
+    docsearch({
+      // ...
+      getMissingResultsUrl({ query }) {
+        return `https://github.com/algolia/docsearch/issues/new?title=${query}`;
+      },
+    });
+    ```
+  </TabItem>
 
-```js
-docsearch({
-  // ...
-  getMissingResultsUrl({ query }) {
-    return `https://github.com/algolia/docsearch/issues/new?title=${query}`;
-  },
-});
-```
-
-</TabItem>
-
-<TabItem value="react">
-
-```jsx
-<DocSearch
-  // ...
-  getMissingResultsUrl={({ query }) => {
-    return `https://github.com/algolia/docsearch/issues/new?title=${query}`;
-  }}
-/>
-```
-
-</TabItem>
+  <TabItem value="react">
+    ```jsx
+    <DocSearch
+      // ...
+      getMissingResultsUrl={({ query }) => {
+        return `https://github.com/algolia/docsearch/issues/new?title=${query}`;
+      }}
+    />
+    ```
+  </TabItem>
 </Tabs>
+
 
 When provided, an informative message wrapped with your link will be displayed on no results searches. The default text can be changed using the [translations](#translations) property.
 
 <div className="uil-ta-center">
-  <img
-    src={useBaseUrl('img/assets/noResultsScreen.png')}
-    alt="No results screen with informative message"
-  />
+  <img src={useBaseUrl('img/assets/noResultsScreen.png')} alt="No results screen with informative message" />
 </div>
+
 
 ## `resultsFooterComponent`
 
@@ -271,53 +264,51 @@ You get access to the [current state](https://github.com/algolia/autocomplete/bl
   groupId="language"
   defaultValue="js"
   values={[
-    { label: 'JavaScript', value: 'js', },
-    { label: 'React', value: 'react', }
+   { label: 'JavaScript', value: 'js', },
+   { label: 'React', value: 'react', }
   ]
-}>
-<TabItem value="js">
-
-```js
-docsearch({
-  // ...
-  resultsFooterComponent({ state }) {
-    return {
-      // The HTML `tag`
-      type: 'a',
-      ref: undefined,
-      constructor: undefined,
-      key: state.query,
-      // Its props
-      props: {
-        href: 'https://docsearch.algolia.com/apply',
-        target: '_blank',
-        onClick: (event) => {
-          console.log(event);
-        },
-        // Raw text rendered in the HTML element
-        children: `${state.context.nbHits} hits found!`,
+  }
+>
+  <TabItem value="js">
+    ```js
+    docsearch({
+      // ...
+      resultsFooterComponent({ state }) {
+        return {
+          // The HTML `tag`
+          type: 'a',
+          ref: undefined,
+          constructor: undefined,
+          key: state.query,
+          // Its props
+          props: {
+            href: 'https://docsearch.algolia.com/apply',
+            target: '_blank',
+            onClick: (event) => {
+              console.log(event);
+            },
+            // Raw text rendered in the HTML element
+            children: `${state.context.nbHits} hits found!`,
+          },
+          __v: null,
+        };
       },
-      __v: null,
-    };
-  },
-});
-```
+    });
+    ```
+  </TabItem>
 
-</TabItem>
-
-<TabItem value="react">
-
-```jsx
-<DocSearch
-  // ...
-  resultsFooterComponent={({ state }) => {
-    return <h1>{state.context.nbHits} hits found</h1>;
-  }}
-/>
-```
-
-</TabItem>
+  <TabItem value="react">
+    ```jsx
+    <DocSearch
+      // ...
+      resultsFooterComponent={({ state }) => {
+        return <h1>{state.context.nbHits} hits found</h1>;
+      }}
+    />
+    ```
+  </TabItem>
 </Tabs>
+
 
 ## `maxResultsPerGroup`
 
@@ -331,30 +322,18 @@ The maximum number of results to display per search group. Default is 5.
   groupId="language"
   defaultValue="js"
   values={[
-    { label: 'JavaScript', value: 'js', }
+   { label: 'JavaScript', value: 'js', }
   ]
-}>
-<TabItem value="js">
-
-```js
-docsearch({
-  // ...
-  maxResultsPerGroup: 7,
-});
-```
-
-</TabItem>
-
+  }
+>
+  <TabItem value="js">
+    ```js
+    docsearch({
+      // ...
+      maxResultsPerGroup: 7,
+    });
+    ```
+  </TabItem>
 </Tabs>
 
-[1]: https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/
-[2]: https://github.com/algolia/docsearch/
-[3]: https://github.com/algolia/docsearch/tree/master
-[4]: /docs/legacy/dropdown
-[5]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
-[6]: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
-[7]: https://www.algolia.com/doc/api-reference/search-api-parameters/
-[8]: https://github.com/algolia/docsearch/blob/main/packages/docsearch-react/src/Hit.tsx
-[9]: https://codesandbox.io/s/docsearch-v3-debounced-search-gnx87
-[10]: https://www.algolia.com/doc/api-client/getting-started/what-is-the-api-client/javascript/?client=javascript
-[11]: https://www.algolia.com/doc/ui-libraries/autocomplete/core-concepts/keyboard-navigation/
+

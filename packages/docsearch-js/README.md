@@ -1,6 +1,6 @@
 # @docsearch/js
 
-JavaScript package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+JavaScript pac kage for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
 ## Installation
 
@@ -28,7 +28,7 @@ Then, insert DocSearch into it by calling the [`docsearch`](https://docsearch.al
 
 Make sure to provide a [`container`](https://docsearch.algolia.com/docs/api#container) (for example, a `div`), not an `input`. DocSearch generates a fully accessible search box for you.
 
-```js app.js
+```js
 import docsearch from '@docsearch/js';
 
 import '@docsearch/css';

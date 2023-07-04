@@ -17,7 +17,7 @@
 
 ***
 
-DocSearch crasawls your doscumeds antation, pushes the content to an Algolia index and provides a dropdown sear ch experie nce on your website.
+DocSearch cras awls your doscumeds antation, pushes the content to an Algolia index and provides a dropdown sear ch experie nce on your website.
 
 ## Preview
 
