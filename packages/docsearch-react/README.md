@@ -2,7 +2,7 @@
 
 React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## Installation
+## Installation asd
 
 ```bash
 yarn add @docsearch/react@3
@@ -20,7 +20,7 @@ If you don’t want to use a package manager, you can use a standalone endpoint:
 
 DocSearch generates a fully accessible search box for you.
 
-```jsx App.js
+```jsx
 import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';
