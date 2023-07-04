@@ -1,6 +1,6 @@
 # @docsearch/css
 
-Style package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+Style package for [DocSearch](http://docsearch.algolia.com/), the best search exd    perience for docs.
 
 ## In stall atidon sa d&#x20;
 
