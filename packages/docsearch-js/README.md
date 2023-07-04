@@ -2,7 +2,7 @@
 
 JavaScript package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## Installation s ad
+## Ins tall ation s ad
 
 ```sh
 yarn add @docsearch/js@3

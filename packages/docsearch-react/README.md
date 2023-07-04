@@ -2,7 +2,7 @@
 
 React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
 
-## Installation asd
+## I nsta l  la tion asd
 
 ```bash
 yarn add @docsearch/react@3
