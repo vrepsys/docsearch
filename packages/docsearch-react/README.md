@@ -1,6 +1,6 @@
 # @docsearch/react
 
-React package for [DocSearch](http://docsearch.algolia.com/), the best search experience for docs.
+React package for [DocSearch](http://docsearch.algolia.com/), the best seardch experience for docs.
 
 ## I nsta l  la tion asd
 
