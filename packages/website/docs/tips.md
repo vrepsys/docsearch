@@ -2,6 +2,8 @@
 title: Tips for a good search
 ---
 
+# Hello the title we add
+
 DocSearch can work with almost any website, but we've found that some site structures yield more relevant results or faster indexing time. In this page we'll share some tips on how you can make the most out of DocSearch.
 
 ## Use a `sitemap.xml`
@@ -10,7 +12,7 @@ If you provide a sitemap in your configuration, DocSearch will use it to directl
 
 We highly recommend you add a `sitemap.xml` to your website if you don't have one already. This will make the indexing faster, but will also give you more control over which page you'd like to include or not in the indexing.
 
-Sitemaps are also considered good practice for other aspects, including SEO ([more information on sitemaps][1]).
+Sitemaps are also considered good practice for other aspects, including SEO ([more information on sitemaps](https://www.sitemaps.org/index.html)).
 
 ## Structure the hierarchy of information
 
@@ -22,7 +24,7 @@ DocSearch uses this structure to fine-tune the relevance of results as well as t
 
 Finding the right depth of your documentation tree and how to split up your content are two of the most complex tasks. For large pages, we recommend having 4 levels (from `lvl0` to `lvl3`). We recommend at least three different levels.
 
-_Note that you don't have to use `<hX>` tags and can use classes instead (e.g., `<span class="title-X">` )._
+*Note that you don't have to use `<hX>` tags and can use classes instead (e.g., `<span class="title-X">` ).*
 
 ## Set a unique class to the element holding the content
 
@@ -38,7 +40,7 @@ DocSearch will honor such anchors and automatically bring your users to the anch
 
 ## Marking the active page(s) in the navigation
 
-If you're using a multi-level navigation, we recommend that you mark each active level with a custom CSS class. This will make it easier for DocSearch to know _where_ the current page fits in the website hierarchy.
+If you're using a multi-level navigation, we recommend that you mark each active level with a custom CSS class. This will make it easier for DocSearch to know *where* the current page fits in the website hierarchy.
 
 For example, if your `troubleshooting.html` page is located under the "Installation" menu in your sidebar, we recommend that you add a custom CSS class to the "Installation" and "Troubleshooting" links in your sidebar.
 
@@ -58,14 +60,10 @@ Since documentation should be **interactive**, it is a key point to **verbalize 
 
 The more time-consuming reading documentation is, the more painful and reluctant its use will be. You must avoid hazy points or catch-all. With being unhelpful, the catch-all document may be **confusing** and **counterproductive**.
 
-Duplicates introduce noise and mislead users. This is why you should always focus on the relevant content and avoid duplicating content within your site (for example landing page which contains all information, summing up, etc.). If duplicates are expected because they belong to multiple datasets (for example a different version), you should use [facets][3].
+Duplicates introduce noise and mislead users. This is why you should always focus on the relevant content and avoid duplicating content within your site (for example landing page which contains all information, summing up, etc.). If duplicates are expected because they belong to multiple datasets (for example a different version), you should use [facets](https://www.algolia.com/doc/guides/searching/faceting/).
 
 ## Conciseness
 
 What is clearly thought out is clearly and concisely expressed.
 
-We highly recommend that you read this blog post about [how to build a helpful search for technical documentation][2].
-
-[1]: https://www.sitemaps.org/index.html
-[2]: https://blog.algolia.com/how-to-build-a-helpful-search-for-technical-documentation-the-laravel-example/
-[3]: https://www.algolia.com/doc/guides/searching/faceting/
+We highly recommend that you read this blog post about [how to build a helpful search for technical documentation](https://blog.algolia.com/how-to-build-a-helpful-search-for-technical-documentation-the-laravel-example/).
